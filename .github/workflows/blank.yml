@@ -36,3 +36,7 @@ jobs:
           echo test, and deploy your project.
       - name: Proses Tambahan
         run: date
+
+      - name: Jalankan kode python
+        run: python nama.py
+

@@ -41,4 +41,6 @@ jobs:
         run: python nama.py
 
       - name: Secret Variabel
-        run: echo ${{ secrets.NAMA_LENGKAP }}
+        env:
+          NAMA: ${{ secrets.NAMA_LENGKAP }}
+        run: echo "$NAMA"

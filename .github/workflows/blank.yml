@@ -40,3 +40,5 @@ jobs:
       - name: Jalankan kode python
         run: python nama.py
 
+      - name: Secret Variabel
+        run: echo ${{ secrets.NAMA_LENGKAP }}
